@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queeny</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Cursos</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Curso maquiagem profissonal</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Curso maquiagem basico</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Curso Delineado</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Curso de massagem</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Curso Cabelereiro</a>
+                </li>
+            </ul>
+            <img src="img/logo-removebg-preview.png" alt="Logo da queeny" class="container__imagem"
+            width="300">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Que</b>eny</h1>
+        </div>
+
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu" class="opções__rotulo">
+                <li class="opções__item">Cursos</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Curso maquiagem profissonal</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Curso maquiagem basico</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Curso Delineado</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Curso de massagem</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Curso Cabelereiro</a>
+                </li>
+            </ul>
+
+            <li class="opções__item"><a href="#" class="opções__link">Seus cursos</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Sobre nos</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container__link">
+                <img src="img/compras-removebg-preview.png" alt="Carrinhos de compras" class="container__imagem" width="40">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Viu algum curso que o interesou?</h2>
+        <p class="banner__texto">Encontre-o em nosso portifolio </p>
+        <input type="search" class="banner__pesquisa" placeholder="Pesquise aqui ">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Cursos aclamados pela critica</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/cabelereiro.jpg"
+                            alt="Curso de cabelereiro"></div>
+                    <div class="swiper-slide"><img src="img/curso de delineado.jpg"
+                            alt="Curso rapido de delineado"></div>
+                    <div class="swiper-slide"><img src="img/curso de maquiagem.jpg"
+                            alt="Curso de maquiagem basico"></div>
+                    <div class="swiper-slide"><img src="img/curso de maquiagem profi.jpg" alt="Curso de maquigem profissional"></div>
+                    <div class="swiper-slide"><img src="img/masagem curso.jpg" alt="Curso de massagem"></div>
+                    <div class="swiper-slide"><img src="img/unha curso.jpg" alt="Curso de unhas"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <h3 class="descrição__titulo">Talvez você queira ver ...</h3>
+                        <h2 class="descrição__titulo-livro">Billie Eilish </h2>
+                        <p class="descrição__texto"> Billie Eilish rebate críticas sobre looks femininos: “Deixem as mulheres existirem”</p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="img/billie cert.jpg" class="descrição__imagem"
+                    width="300">
+                    
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/compras-removebg-preview.png" alt="Adicionar no carrinho de compras" width="35"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais vendidos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/desing moda cert.jpg"
+                            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                    <div class="swiper-slide"><img src="img/sobrancelha certt.jpg"
+                            alt="Livro sobre liderança em design da alura books"></div>
+                    <div class="swiper-slide"><img src="img/digital cert.jpg"
+                            alt="Livro sobre javascript assertivo da alurabooks"></div>
+                    <div class="swiper-slide"><img src="img/tatuagem.jpg" alt="Livro Guia front end"></div>
+                    <div class="swiper-slide"><img src="img/curso sobrancelha].png" alt="Livro sobre portugol"></div>
+                    <div class="swiper-slide"><img src="img/cursodesign cert.png" alt="livro sobre acessibilidade"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+                        <h3 class="descrição__titulo">Destaques</h3>
+                        <h2 class="descrição__titulo-livro">Taylor Swift</h2>
+                        <p class="descrição__texto">Chapéus de cowboy e botas: shows de Taylor Swift movimentam lojas de moda nos EUA
+                        </p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="img/taylor.jpg" class="descrição__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Salvar cursos"></li>
+                        <li class="botões__item"><img src="img/compras-removebg-preview.png" alt="Adicionar no carrinho de compras" width="35"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tópicos">
+        <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="tópicos__lista">
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Maquiagens</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Cortes tendencia</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Designer unhas</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Bases</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Tinta para cabelo</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Delineado</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Sobrancelha</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Cilios postiços</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <div class="contato__descrição">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualização de todas as novas modas e estilos tendencia para você </p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
+    <hr />
+
+    <footer class="rodapé">
+        <h2 class="rodapé__titulo">Influencers para seguir </h2>
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Moda brasileira</li>
+            <li class="lista-rodapé__item">
+                <img src="img/Thássia Naves.jpg" alt="imagem da thassia">
+                <a href="#" class="lista-rodapé__link">Thássia Naves</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/Camila Coutinho.jpg" alt="imagem camilla" width="35">
+                <a href="#" class="lista-rodapé__link">Camila Coutinho</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Influencers internacionais</li>
+            <li class="lista-rodapé__item">
+                <img src="img/Leandra Medine.jpg" alt="imagens da Leandra Medine" width="45">
+                <a href="#" class="lista-rodapé__link">Leandra Medine</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/Aimee Song.jpg" alt="imagens da Aimee Song" width="50">
+                <a href="#" class="lista-rodapé__link">Aimee Song</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/Madison beer.jpg" alt="foto da Madison beer" width="50">
+                <a href="#" class="lista-rodapé__link">Madison beer</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/Addisonre.jpg" alt="foto da Addisonre" width="50">
+                <a href="#" class="lista-rodapé__link">Addisonre</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/Blair Eadie.jpg" alt="imagem da Blair Eadie" width="40">
+                <a href="#" class="lista-rodapé__link">Blair Eadie </a>
+            </li>
+          
+            <li class="lista-rodapé__item">
+                <img src="img/Anabelle Fleuer.jpg" alt="imagem da Anabelle Fleuer" width="45">
+                <a href="#" class="lista-rodapé__link">Anabelle Fleuer</a>
+            </li>
+        </ul>
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Influencers fora do padrão</li>
+            <li class="lista-rodapé__item">
+                <img src="img/Bruna Yamaguti.jpg" alt="imagem da Bruna Yamaguti" width="40">
+                <a href="#" class="lista-rodapé__link">Bruna Yamaguti</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/Nanna Fernandes.jpg" alt="imagem da Nanna Fernandes" width="40">
+                <a href="#" class="lista-rodapé__link"> Nanna Fernandes</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/Camila Sawamura.jpg" alt="imagem da Camila Sawamura" width="40">
+                <a href="#" class="lista-rodapé__link">Camila Sawamura</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/Larissa Sampaio.jpg" alt="imagem da Larissa Sampaio" width="40">
+                <a href="#" class="lista-rodapé__link">Larissa Sampaio</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/Mirian Bottan.jpg" alt="imagem da Mirian Bottan" width="40">
+                <a href="#" class="lista-rodapé__link">Mirian Bottan</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/Raissa Galvão.jpg" alt="imagem da Raissa Galvão" width="45">
+                <a href="#" class="lista-rodapé__link">Raissa Galvão</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/Mama Cāx.jpg" alt="imagem da Mama Cāx" width="45">
+                <a href="#" class="lista-rodapé__link">Mama Cāx</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+
+</html>
